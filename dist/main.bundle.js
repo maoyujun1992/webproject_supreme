@@ -222,26 +222,26 @@ var appRoutes = [
     { path: 'loggedinhome/users/:uid', component: __WEBPACK_IMPORTED_MODULE_17__views_home_loggedin_home_loggedin_home_component__["a" /* LoggedinHomeComponent */] },
     { path: 'login', component: __WEBPACK_IMPORTED_MODULE_1__views_users_login_login_component__["a" /* LoginComponent */] },
     { path: 'register', component: __WEBPACK_IMPORTED_MODULE_2__views_users_register_register_component__["a" /* RegisterComponent */] },
-    { path: 'users/admin/:uid', component: __WEBPACK_IMPORTED_MODULE_16__views_admin_admin_profile_admin_profile_component__["a" /* AdminProfileComponent */] },
-    { path: 'users/buyer/:uid', component: __WEBPACK_IMPORTED_MODULE_7__views_users_profile_buyer_profile_buyer_profile_component__["a" /* BuyerProfileComponent */] },
-    { path: 'users/seller/:uid', component: __WEBPACK_IMPORTED_MODULE_8__views_users_profile_seller_profile_seller_profile_component__["a" /* SellerProfileComponent */] },
-    { path: 'users/admin/:uid/edititem', component: __WEBPACK_IMPORTED_MODULE_3__views_admin_admin_item_edit_admin_item_edit_component__["a" /* AdminItemEditComponent */] },
-    { path: 'users/admin/:uid/edituser', component: __WEBPACK_IMPORTED_MODULE_4__views_admin_admin_user_edit_admin_user_edit_component__["a" /* AdminUserEditComponent */] },
-    { path: 'users/seller/:uid/new', component: __WEBPACK_IMPORTED_MODULE_5__views_item_item_edit_item_edit_component__["a" /* ItemEditComponent */] },
-    { path: 'users/seller/:uid/item/:iid', component: __WEBPACK_IMPORTED_MODULE_5__views_item_item_edit_item_edit_component__["a" /* ItemEditComponent */] },
-    { path: 'users/:uid/item/:iid', component: __WEBPACK_IMPORTED_MODULE_6__views_item_item_display_item_display_component__["a" /* ItemDisplayComponent */] },
-    { path: 'users/buyer/:uid/cart', component: __WEBPACK_IMPORTED_MODULE_9__views_checkout_cart_cart_component__["a" /* CartComponent */] },
-    { path: 'users/buyer/:uid/payment', component: __WEBPACK_IMPORTED_MODULE_10__views_checkout_payment_payment_component__["a" /* PaymentComponent */] },
-    { path: 'users/buyer/:uid/summary', component: __WEBPACK_IMPORTED_MODULE_11__views_checkout_summary_summary_component__["a" /* SummaryComponent */] },
-    { path: 'users/buyer/:uid/history', component: __WEBPACK_IMPORTED_MODULE_12__views_users_profile_buyer_profile_order_history_order_history_component__["a" /* OrderHistoryComponent */] },
-    { path: 'users/seller/:uid/history', component: __WEBPACK_IMPORTED_MODULE_15__views_users_profile_seller_profile_sale_history_sale_history_component__["a" /* SaleHistoryComponent */] },
-    { path: 'users/seller/:uid/creditcard', component: __WEBPACK_IMPORTED_MODULE_18__views_users_creditcard_creditcard_component__["a" /* CreditcardComponent */] },
-    { path: 'users/buyer/:uid/creditcard', component: __WEBPACK_IMPORTED_MODULE_18__views_users_creditcard_creditcard_component__["a" /* CreditcardComponent */] },
-    { path: 'users/:uid/searchresult', component: __WEBPACK_IMPORTED_MODULE_14__views_item_item_list_item_list_component__["a" /* ItemListComponent */] },
-    { path: 'users/guest/searchresult', component: __WEBPACK_IMPORTED_MODULE_14__views_item_item_list_item_list_component__["a" /* ItemListComponent */] },
-    { path: 'users/guest/item/:iid', component: __WEBPACK_IMPORTED_MODULE_6__views_item_item_display_item_display_component__["a" /* ItemDisplayComponent */] },
+    { path: 'user/admin/:uid', component: __WEBPACK_IMPORTED_MODULE_16__views_admin_admin_profile_admin_profile_component__["a" /* AdminProfileComponent */] },
+    { path: 'user/buyer/:uid', component: __WEBPACK_IMPORTED_MODULE_7__views_users_profile_buyer_profile_buyer_profile_component__["a" /* BuyerProfileComponent */] },
+    { path: 'user/seller/:uid', component: __WEBPACK_IMPORTED_MODULE_8__views_users_profile_seller_profile_seller_profile_component__["a" /* SellerProfileComponent */] },
+    { path: 'user/admin/:uid/edititem', component: __WEBPACK_IMPORTED_MODULE_3__views_admin_admin_item_edit_admin_item_edit_component__["a" /* AdminItemEditComponent */] },
+    { path: 'user/admin/:uid/edituser', component: __WEBPACK_IMPORTED_MODULE_4__views_admin_admin_user_edit_admin_user_edit_component__["a" /* AdminUserEditComponent */] },
+    { path: 'user/seller/:uid/new', component: __WEBPACK_IMPORTED_MODULE_5__views_item_item_edit_item_edit_component__["a" /* ItemEditComponent */] },
+    { path: 'user/seller/:uid/item/:iid', component: __WEBPACK_IMPORTED_MODULE_5__views_item_item_edit_item_edit_component__["a" /* ItemEditComponent */] },
+    { path: 'user/:uid/item/:iid', component: __WEBPACK_IMPORTED_MODULE_6__views_item_item_display_item_display_component__["a" /* ItemDisplayComponent */] },
+    { path: 'user/buyer/:uid/cart', component: __WEBPACK_IMPORTED_MODULE_9__views_checkout_cart_cart_component__["a" /* CartComponent */] },
+    { path: 'user/buyer/:uid/payment', component: __WEBPACK_IMPORTED_MODULE_10__views_checkout_payment_payment_component__["a" /* PaymentComponent */] },
+    { path: 'user/buyer/:uid/summary', component: __WEBPACK_IMPORTED_MODULE_11__views_checkout_summary_summary_component__["a" /* SummaryComponent */] },
+    { path: 'user/buyer/:uid/history', component: __WEBPACK_IMPORTED_MODULE_12__views_users_profile_buyer_profile_order_history_order_history_component__["a" /* OrderHistoryComponent */] },
+    { path: 'user/seller/:uid/history', component: __WEBPACK_IMPORTED_MODULE_15__views_users_profile_seller_profile_sale_history_sale_history_component__["a" /* SaleHistoryComponent */] },
+    { path: 'user/seller/:uid/creditcard', component: __WEBPACK_IMPORTED_MODULE_18__views_users_creditcard_creditcard_component__["a" /* CreditcardComponent */] },
+    { path: 'user/buyer/:uid/creditcard', component: __WEBPACK_IMPORTED_MODULE_18__views_users_creditcard_creditcard_component__["a" /* CreditcardComponent */] },
+    { path: 'user/:uid/searchresult', component: __WEBPACK_IMPORTED_MODULE_14__views_item_item_list_item_list_component__["a" /* ItemListComponent */] },
+    { path: 'user/guest/searchresult', component: __WEBPACK_IMPORTED_MODULE_14__views_item_item_list_item_list_component__["a" /* ItemListComponent */] },
+    { path: 'user/guest/item/:iid', component: __WEBPACK_IMPORTED_MODULE_6__views_item_item_display_item_display_component__["a" /* ItemDisplayComponent */] },
 ];
-var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["b" /* RouterModule */].forRoot(appRoutes);
+var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["c" /* RouterModule */].forRoot(appRoutes);
 
 
 /***/ }),
@@ -387,7 +387,7 @@ var UserService = /** @class */ (function () {
     };
     UserService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* Http */], __WEBPACK_IMPORTED_MODULE_4__shared_service__["a" /* SharedService */], __WEBPACK_IMPORTED_MODULE_5__angular_router__["a" /* Router */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* Http */], __WEBPACK_IMPORTED_MODULE_4__shared_service__["a" /* SharedService */], __WEBPACK_IMPORTED_MODULE_5__angular_router__["b" /* Router */]])
     ], UserService);
     return UserService;
 }());
@@ -399,7 +399,14 @@ var UserService = /** @class */ (function () {
 /***/ "./src/app/style.css":
 /***/ (function(module, exports) {
 
-module.exports = ".navbar-default {\n    color: white;\n    background-color: #E1282A;\n}\n\n.logo {\n    height: 10%;\n    width: 10%;\n    border: 1px solid black;\n}\n\n.btn-danger {\n    font-family: \"Courier New\";\n    font-weight: bold;\n    background-color: #E1282A;\n    border: 1px solid black;\n}\n\n.link-button:hover {\n    background-color: #E1282A;\n    border: 1px solid black;\n}\n\n.banner {\n    width: 100%;\n}\n\n.body-black {\n    background-color: black;\n}\n\n.bg-img {\n    background: url('wallpaper.c5ceda0f35e4c09f5b9d.png');\n    padding-bottom: 50px;\n    padding-top: 50px;\n    width: 100%;\n    height: 100%;\n}\n\n.center-search {\n    display: block;\n    margint-top: 100px;\n    margin-left: auto;\n    margin-right: auto;\n}\n\n.footer-color {\n    background-color: #E1282A;\n}\n\n.supreme-font {\n    font-family: \"Courier New\";\n    color:white;\n\n}\n\n.fa {\n    font-size: 15px;\n}\n\n.fa:hover{\n    color: black;\n}\n\n.white_text {\n    color: white;\n}\n\n.center_input {\n    display: block;\n    margin-left: auto;\n    margin-right: auto;\n    width: 70%;\n    margin-bottom: 8px;\n}\n\n.center_text {\n    text-align: center;\n}\n\n.text-font-size {\n    font-size: 20px;\n}\n\n.input_padding {\n    padding-top: 10px;\n}\n\n.footer-padding {\n    margin-bottom: 75px;\n}\n\n.small-button {\n    width: 50%;\n    font-size: 10px;\n}\n\nbutton {\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n}\n\n.a-no-hover:hover {\n    text-decoration: none;\n}\n\n.a-no-color {\n    color: white;\n}\n\n.a-no-visited:visited {\n    color: white;\n}\n\n.form-wrapper {\n    margin: 10px;\n    horiz-align: center;\n    border: 1px solid white;\n}\n\n.full-input {\n    border: 2px solid #E1282A;\n}\n\nlabel {\n    display: block;\n    font-size: 12px;\n    color: #E1282A;\n}\n\n.input-white-text {\n    color: white;\n}\n\n.left-border-white {\n    border-left: 1px solid white;\n}\n\n.corner-button {\n    position: fixed;\n    bottom: 90px;\n    right: 20px;\n    width: 40%;\n    horiz-align: center;\n}\n\n.supreme-text-logo {\n    font-size: 20px;\n    padding-left: 20px\n}\n\n.img-display-size {\n    height: 300px;\n    width: 300px;\n}\n\n.center-image {\n    display: block;\n    margin-left: auto;\n    margin-right: auto;\n\n}\n\n.black-card {\n    background: black;\n}\n\n.header-margin-bottom{\n    margin-bottom: 20px;\n}\n\n.btn-outline-danger{\n    color:#E1282A;\n}\n\n.left-column{\n    width:25%;\n    height: 100%;\n    float:left;\n}\n\n.right-column{\n    height: 100%;\n}\n\n.full-border {\n    border: 2px solid #E1282A;\n}\n\n.bottom-button {\n    margin-bottom:20px;\n}\n\n.big-box {\n    margin: 2% 3% 3%;\n}\n\n.item-text {\n    color: black;\n    font-family: \"Courier New\";\n}\n\nhtml, body{\n    height: 100%;\n}\n\n.pagination {\n    margin: 50px;\n    display: inline-block;\n}\n\n.pagination a {\n    color: #E1282A;\n    float: left;\n    padding: 8px 16px;\n    text-decoration: none;\n    -webkit-transition: background-color .3s;\n    transition: background-color .3s;\n    border: 1px solid #E1282A;\n}\n\n.pagination a:hover:not(.active) {background-color: white;}\n\n.card-columns{\n    padding-top:10px;\n    margin-bottom: 50px;\n}\n\n.text-black{\n    color: black;\n}\n\n#wrapper{\n    min-height: 100%;\n    height: auto !important;\n    height: 100%;\n    margin: 0 auto -60px;\n}\n\nhtml, body {\n    height: 100%;\n}"
+module.exports = ".navbar-default {\n    color: white;\n    background-color: #E1282A;\n}\n\n.logo {\n    height: 10%;\n    width: 10%;\n    border: 1px solid black;\n}\n\n.btn-danger {\n    font-family: \"Courier New\";\n    font-weight: bold;\n    background-color: #E1282A;\n    border: 1px solid black;\n}\n\n.link-button:hover {\n    background-color: #E1282A;\n    border: 1px solid black;\n}\n\n.banner {\n    width: 100%;\n}\n\n.body-black {\n    background-color: black;\n}\n\n.bg-img {\n    background: url('wallpaper.c5ceda0f35e4c09f5b9d.png');\n    padding-bottom: 50px;\n    padding-top: 50px;\n    width: 100%;\n    height: 100%;\n}\n\n.center-search {\n    display: block;\n    margint-top: 100px;\n    margin-left: auto;\n    margin-right: auto;\n}\n\n.footer-color {\n    background-color: #E1282A;\n}\n\n.supreme-font {\n    font-family: \"Courier New\";\n    color:white;\n\n}\n\n.fa {\n    font-size: 15px;\n}\n\n.fa:hover{\n    color: black;\n}\n\n.white_text {\n    color: white;\n}\n\n.center_input {\n    display: block;\n    margin-left: auto;\n    margin-right: auto;\n    width: 70%;\n    margin-bottom: 8px;\n}\n\n.center_text {\n    text-align: center;\n}\n\n.text-font-size {\n    font-size: 20px;\n}\n\n.input_padding {\n    padding-top: 10px;\n}\n\n.footer-padding {\n    margin-bottom: 200px;\n}\n\n.small-button {\n    width: 50%;\n    font-size: 10px;\n}\n\nbutton {\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n}\n\n.a-no-hover:hover {\n    text-decoration: none;\n}\n\n.a-no-color {\n    color: white;\n}\n\n.a-no-visited:visited {\n    color: white;\n}\n\n.form-wrapper {\n    margin: 10px;\n    horiz-align: center;\n    border: 1px solid white;\n}\n\n.full-input {\n    border: 2px solid #E1282A;\n}\n\nlabel {\n    display: block;\n    font-size: 12px;\n    color: #E1282A;\n}\n\n.input-white-text {\n    color: white;\n}\n\n.left-border-white {\n    border-left: 1px solid white;\n}\n\n.corner-button {\n    position: fixed;\n    bottom: 90px;\n    right: 20px;\n    width: 40%;\n    horiz-align: center;\n}\n\n.supreme-text-logo {\n    font-size: 20px;\n    padding-left: 20px\n}\n\n.img-display-size {\n    height: 300px;\n    width: 300px;\n}\n\n.center-image {\n    display: block;\n    margin-left: auto;\n    margin-right: auto;\n\n}\n\n.black-card {\n    background: black;\n}\n\n.header-margin-bottom{\n    margin-bottom: 20px;\n}\n\n.btn-outline-danger{\n    color:#E1282A;\n}\n\n.left-column{\n    width:25%;\n    height: 100%;\n    float:left;\n}\n\n.right-column{\n    height: 100%;\n}\n\n.full-border {\n    border: 2px solid #E1282A;\n}\n\n.bottom-button {\n    margin-bottom:20px;\n}\n\n.big-box {\n    margin: 2% 3% 3%;\n}\n\n.item-text {\n    color: black;\n    font-family: \"Courier New\";\n}\n\nhtml, body{\n    height: 100%;\n}\n\n.pagination {\n    margin: 50px;\n    display: inline-block;\n}\n\n.pagination a {\n    color: #E1282A;\n    float: left;\n    padding: 8px 16px;\n    text-decoration: none;\n    -webkit-transition: background-color .3s;\n    transition: background-color .3s;\n    border: 1px solid #E1282A;\n}\n\n.pagination a:hover:not(.active) {background-color: white;}\n\n.card-columns{\n    padding-top:10px;\n    margin-bottom: 50px;\n}\n\n.text-black{\n    color: black;\n}"
+
+/***/ }),
+
+/***/ "./src/app/style_derek.css":
+/***/ (function(module, exports) {
+
+module.exports = ".navbar-default {\n    color: white;\n    background-color: #E1282A;\n}\n.logo{\n    height: 10%;\n    width: 10%;\n    border: 1px solid black;\n}\n.btn-danger{\n    font-family: \"Courier New\";\n    font-weight: bold;\n    background-color: #E1282A;\n    border: 1px solid black;\n}\n.link-button:hover{\n    background-color: #E1282A;\n    border: 1px solid black;\n}\n.banner{\n    width:100%;\n}\n.body-pink{\n    background-color: black;\n}\n.center-search{\n    display: block;\n    margint-top:100px;\n    margin-left: auto;\n    margin-right:auto;\n}\n.footer-color{\n    background-color: #E1282A;\n}\n.supreme-font{\n    font-family: \"Courier New\";\n    color: white;\n}\n.center-input{\n    display: block;\n    margin-left: auto;\n    margin-right:auto;\n    width: 65%;\n    margin-bottom: 8px;\n}\n.center-text{\n    text-align: center;\n}\n.btn-outline-danger{\n    color: #E1282A;\n}\n.footer-padding{\n    margin-bottom: 75px;\n}\n.header-padding{\n    margin-bottom: 100px;\n}\n.left-column{\n    /*background-color: green;*/\n    width:25%;\n    height: 100%;\n    float:left;\n}\n.right-column{\n    /*background-color: red;*/\n    height: 100%;\n}\n.left-border {\n    border: 2px solid #E1282A;\n    height: 80vh;\n}\n.right-border {\n    border: 2px solid #E1282A;\n    height: 80vh;\n}\n.bottom-button {\n    position:relative;\n    margin-top:95%;\n}\n.big-box {\n    margin: 2% 3% 3%;\n}\n.input_padding {\n    padding-top: 40%;\n}\n.item-text {\n    color: black;\n    font-family: \"Courier New\";\n}\nhtml, body{\n    height: 100%;\n}\n.pagination {\n    margin: 50px;\n    display: inline-block;\n}\n.pagination a {\n    color: #E1282A;\n    float: left;\n    padding: 8px 16px;\n    text-decoration: none;\n    -webkit-transition: background-color .3s;\n    transition: background-color .3s;\n    border: 1px solid #E1282A;\n}\n.pagination a:hover:not(.active) {background-color: white;}\n.white_text {\n    color: white;\n}\n.a-no-hover:hover {\n    text-decoration: none;\n}\n.a-no-color {\n    color: white;\n}\n.a-no-visited:visited {\n    color: white;\n}\n.supreme-text-logo {\n    font-size: 20px;\n    padding-left: 20px\n}\n"
 
 /***/ }),
 
@@ -1103,17 +1110,10 @@ var LoginComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/views/users/profile/buyer-profile/buyer-profile.component.css":
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
 /***/ "./src/app/views/users/profile/buyer-profile/buyer-profile.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  buyer-profile works!\n</p>\n"
+module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <title>User Profile</title>\n</head>\n<body class=\"body-pink\">\n<nav class=\"navbar navbar-default header-margin-bottom\">\n  <div class=\"supreme-font\">\n    <a class=\"white_text\" href=\"#\"><i class=\"fa fa-chevron-left\"></i></a>\n    <span class=\"supreme-text-logo\"><a class=\"a-no-color a-no-hover a-no-visited\" routerLink=\"home\">S U P R E M E</a></span>\n\n  </div>\n</nav>\n\n<div class=\"supreme-font footer-padding\">\n  <label class=\"center-input\" style=\"padding-top:60px\">Username</label>\n  <input\n    [(ngModel)]=\"username\"\n    name=\"username\"\n    type=\"text\"\n    class=\"form-control center-input\"\n    placeholder=\"{{username}}\"/>\n  <label class=\"center-input\">First Name</label>\n  <input [(ngModel)]=\"firstName\"\n         name=\"firstName\"\n         type=\"text\"\n         class=\"form-control center-input\"\n         placeholder=\"{{firstName}}\"/>\n  <label class=\"center-input\">Last Name</label>\n  <input [(ngModel)]=\"lastName\"\n         name=\"lastName\"\n         type=\"text\"\n         class=\"form-control center-input\"\n         placeholder=\"{{lastName}}\"/>\n  <label class=\"center-input\">Phone</label>\n  <input  [(ngModel)]=\"phone\"\n          name=\"phone\"\n          type=\"text\"\n          class=\"form-control center-input\"\n          placeholder=\"{{phone}}\"/>\n  <label class=\"center-input\">Email</label>\n  <input [(ngModel)]=\"email\"\n         name=\"email\"\n         type=\"text\"\n         class=\"form-control center-input\"\n         placeholder=\"{{email}}\"/>\n  <br>\n  <a class=\"btn btn-outline-danger btn-block center-input\">Update</a>\n  <a class=\"btn btn-outline-danger btn-block center-input\">Update Credit Card</a>\n  <a class=\"btn btn-outline-danger btn-block center-input\">Order History</a>\n  <a class=\"btn btn-outline-danger btn-block center-input\">Sell</a>\n  <a class=\"btn btn-outline-danger btn-block center-input\">Log Out</a>\n</div>\n\n<div class=\"card-footer footer-color fixed-bottom\">\n  <a class=\"pull-right white_text\" href=\" \"><i class=\"fa fa-user\"></i></a >\n</div>\n\n</body>\n\n"
 
 /***/ }),
 
@@ -1123,6 +1123,10 @@ module.exports = "<p>\n  buyer-profile works!\n</p>\n"
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BuyerProfileComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_user_service_client__ = __webpack_require__("./src/app/services/user.service.client.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_shared_service__ = __webpack_require__("./src/app/services/shared.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1133,18 +1137,65 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
+
+
 var BuyerProfileComponent = /** @class */ (function () {
-    function BuyerProfileComponent() {
+    function BuyerProfileComponent(userService, sharedService, activatedRoute, router) {
+        this.userService = userService;
+        this.sharedService = sharedService;
+        this.activatedRoute = activatedRoute;
+        this.router = router;
     }
-    BuyerProfileComponent.prototype.ngOnInit = function () {
+    BuyerProfileComponent.prototype.getUser = function () {
+        this.user = this.sharedService.user;
+        this.username = this.user['username'];
+        this.firstName = this.user['firstName'];
+        this.lastName = this.user['lastName'];
+        this.email = this.user['email'];
+        this.userId = this.user['_id'];
+        this.password = this.user['password'];
+        this.phone = this.user['phone'];
     };
+    BuyerProfileComponent.prototype.logout = function () {
+        var _this = this;
+        this.userService.logout()
+            .subscribe(function (data) { return _this.router.navigate(['/login']); });
+    };
+    BuyerProfileComponent.prototype.update = function () {
+        var _this = this;
+        this.user['username'] = this.loginForm.value.username;
+        this.user['firstName'] = this.loginForm.value.firstName;
+        this.user['lastName'] = this.loginForm.value.lastName;
+        this.user['email'] = this.loginForm.value.email;
+        this.user['password'] = this.loginForm.value.password;
+        this.user['phone'] = this.loginForm.value.phone;
+        this.userService.updateUser(this.userId, this.user).subscribe(function (data) {
+            _this.router.navigate(['/user', _this.userId]);
+        });
+    };
+    BuyerProfileComponent.prototype.delete = function () {
+        var _this = this;
+        this.userService.deleteUser(this.userId).subscribe(function (data) {
+            _this.router.navigate(['/login']);
+        });
+    };
+    BuyerProfileComponent.prototype.ngOnInit = function () {
+        this.getUser();
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])('f'),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* NgForm */])
+    ], BuyerProfileComponent.prototype, "loginForm", void 0);
     BuyerProfileComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-buyer-profile',
             template: __webpack_require__("./src/app/views/users/profile/buyer-profile/buyer-profile.component.html"),
-            styles: [__webpack_require__("./src/app/views/users/profile/buyer-profile/buyer-profile.component.css")]
+            styles: [__webpack_require__("./src/app/style_derek.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__services_user_service_client__["a" /* UserService */],
+            __WEBPACK_IMPORTED_MODULE_4__services_shared_service__["a" /* SharedService */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]])
     ], BuyerProfileComponent);
     return BuyerProfileComponent;
 }());
@@ -1306,7 +1357,7 @@ var SellerProfileComponent = /** @class */ (function () {
 /***/ "./src/app/views/users/register/register.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<head>\n  <title>register</title>\n</head>\n<body>\n<div id=\"wrapper\">\n  <div class=\"body-black\" style=\"margin:0px\">\n    <nav class=\"navbar navbar-default header-margin-bottom\">\n      <div class=\"supreme-font\">\n        <a class=\"white_text\" href=\"#\"><i class=\"fa fa-chevron-left\"></i></a>\n        <span class=\"supreme-text-logo\"><a class=\"a-no-color a-no-hover a-no-visited\"\n                                           routerLink=\"home\">S U P R E M E</a></span>\n      </div>\n    </nav>\n    <div class=\"supreme-font footer-padding\">\n      <p class=\"center_text white_text\">Register</p>\n      <form (ngSubmit)=\"register()\" #f=\"ngForm\">\n        <label class=\"center_input white_text\">Username</label>\n        <input placeholder=\"Username\"\n               name=\"username\"\n               type=\"text\"\n               class=\"form-control center_input\"\n               ngModel\n               required\n               #username=\"ngModel\"/>\n\n        <label class=\"center_input white_text\">Password</label>\n        <input placeholder=\"Password\"\n               name=\"password\"\n               type=\"text\"\n               class=\"form-control center_input\"\n               ngModel\n               required\n               #username=\"ngModel\"/>\n        <label class=\"center_input white_text\">Verify Password</label>\n        <input placeholder=\"Verify your password\"\n               name=\"verifiedPassword\"\n               type=\"text\"\n               class=\"form-control center_input\"\n               ngModel\n               required\n               #username=\"ngModel\"/>\n        <div class=\"center_text\">\n          <label for=\"sellercheck\" class=\"white_text\" style=\"word-wrap:break-word\">\n            <input id=\"sellercheck\" type=\"checkbox\" value=\"Seller\"/> Seller\n          </label>\n          <label for=\"buyercheck\" class=\"white_text\" style=\"word-wrap:break-word\">\n            <input id=\"buyercheck\" type=\"checkbox\" value=\"Buyer\"/> Buyer\n          </label>\n        </div>\n      </form>\n      <a class=\"btn btn-outline-danger btn-block center_input\">Add a credit card</a>\n      <a class=\"btn btn-outline-danger btn-block center_input\" (click)=\"f.ngSubmit.emit()\">Register </a>\n      <a class=\"btn btn-outline-danger btn-block center_input\">Cancel</a>\n    </div>\n    <div class=\"card-footer footer-color fixed-bottom\">\n      <a class=\"pull-right white_text\" href=\" \"><i class=\"fa fa-user\"></i></a>\n    </div>\n  </div>\n</div>\n</body>\n\n"
+module.exports = "<head>\n  <title>register</title>\n</head>\n<body class=\"body-black\">\n\n<nav class=\"navbar navbar-default header-margin-bottom\">\n  <div class=\"supreme-font\">\n    <a class=\"white_text\" routerLink=\"../\"><i class=\"fa fa-chevron-left\"></i></a>\n    <span class=\"supreme-text-logo\"><a class=\"a-no-color a-no-hover a-no-visited\"\n                                       routerLink=\"/home\">S U P R E M E</a></span>\n  </div>\n</nav>\n<div *ngIf=\"errorFlag\"\n     class=\"alert alert-danger\">\n  {{errorMsg}}\n</div>\n<div class=\"supreme-font footer-padding\">\n  <p class=\"center_text white_text\">Register</p>\n  <form (ngSubmit)=\"register()\" #f=\"ngForm\">\n    <div class=\"center_text\">\n      <label for=\"sellercheck\" class=\"white_text\" style=\"word-wrap:break-word\">\n        <input\n          [(ngModel)]=\"userType\"\n          name=\"userType\"\n          id=\"sellercheck\"\n          type=\"checkbox\"\n          value=\"Seller\"\n        /> Seller\n      </label>\n    </div>\n    <label class=\"center_input white_text\">Username</label>\n    <input placeholder=\"Username\"\n           name=\"username\"\n           type=\"text\"\n           class=\"form-control center_input\"\n           ngModel\n           required\n           #username=\"ngModel\"/>\n    <span class=\"help-block center_text\"\n          *ngIf=\"!username.valid && username.touched\">\n      Please enter username!\n      </span>\n    <label class=\"center_input white_text\">Password</label>\n    <input placeholder=\"Password\"\n           name=\"password\"\n           type=\"password\"\n           class=\"form-control center_input\"\n           ngModel\n           required\n           #password=\"ngModel\"/>\n    <span class=\"help-block center_text\"\n          *ngIf=\"!password.valid && password.touched\">\n      Please enter username!\n      </span>\n    <label class=\"center_input white_text\">Verify Password</label>\n    <input placeholder=\"Verify your password\"\n           name=\"verifiedPassword\"\n           type=\"text\"\n           class=\"form-control center_input\"\n           ngModel\n           required\n           #verifiedPassword=\"ngModel\"/>\n    <span class=\"help-block center_text\"\n          *ngIf=\"!verifiedPassword.valid && verifiedPassword.touched\">\n      Please enter username!\n      </span>\n    <div>\n      <button class=\"btn btn-outline-danger btn-block center_input\" style=\"color: white;\" type=\"submit\"\n              [disabled]=\"!f.valid\">\n        Register\n      </button>\n      <button class=\"btn btn-outline-danger btn-block center_input\" style=\"color: white;\" routerLink=\"/home\">Cancel\n      </button>\n    </div>\n  </form>\n\n</div>\n<div class=\"card-footer footer-color fixed-bottom\">\n  <a class=\"pull-right white_text\" href=\" \"><i class=\"fa fa-user\"></i></a>\n</div>\n</body>\n\n"
 
 /***/ }),
 
@@ -1345,6 +1396,12 @@ var RegisterComponent = /** @class */ (function () {
         this.username = this.loginForm.value.username;
         this.password = this.loginForm.value.password;
         this.verifiedPassword = this.loginForm.value.verifiedPassword;
+        if (this.loginForm.value.userType) {
+            this.userType = 'Seller';
+        }
+        else {
+            this.userType = 'Buyer';
+        }
         if (this.password !== this.verifiedPassword) {
             this.errorFlag = true;
         }
@@ -1352,7 +1409,7 @@ var RegisterComponent = /** @class */ (function () {
             var user = { username: this.username, password: this.password, userType: this.userType };
             this.userService.register(this.username, this.password, this.userType).subscribe(function (data) {
                 _this.sharedService.user = data;
-                _this.router.navigate(['/user', _this.userType, data._id]);
+                _this.router.navigate(['/user', _this.userType.toLowerCase(), data._id]);
             }, function (error) {
                 _this.errorFlag = true;
                 _this.errorMsg = 'Username is in use';
@@ -1371,7 +1428,7 @@ var RegisterComponent = /** @class */ (function () {
             template: __webpack_require__("./src/app/views/users/register/register.component.html"),
             styles: [__webpack_require__("./src/app/style.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__services_user_service_client__["a" /* UserService */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */], __WEBPACK_IMPORTED_MODULE_4__services_shared_service__["a" /* SharedService */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__services_user_service_client__["a" /* UserService */], __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */], __WEBPACK_IMPORTED_MODULE_4__services_shared_service__["a" /* SharedService */]])
     ], RegisterComponent);
     return RegisterComponent;
 }());

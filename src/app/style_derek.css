@@ -24,13 +24,6 @@
     background-color: black;
 }
 
-.bg-img{
-    background: url('asset/wallpaper.jpg');
-    padding-bottom: 50px;
-    padding-top: 50px;
-    width: 100%;
-    height: 100%;
-}
 .center-search{
     display: block;
     margint-top:100px;

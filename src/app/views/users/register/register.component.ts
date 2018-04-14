@@ -25,13 +25,18 @@ export class RegisterComponent implements OnInit {
     this.username = this.loginForm.value.username;
     this.password = this.loginForm.value.password;
     this.verifiedPassword = this.loginForm.value.verifiedPassword;
+    if (this.loginForm.value.userType) {
+      this.userType = 'Seller';
+    } else {
+      this.userType = 'Buyer';
+    }
     if (this.password !== this.verifiedPassword) {
       this.errorFlag = true;
     } else {
       const user = {username: this.username, password: this.password, userType: this.userType};
       this.userService.register(this.username, this.password, this.userType).subscribe((data: any) => {
           this.sharedService.user = data;
-          this.router.navigate(['/user', this.userType, data._id]);
+          this.router.navigate(['/user', this.userType.toLowerCase(), data._id]);
         },
         (error: any) => {
           this.errorFlag = true;
@@ -40,7 +45,7 @@ export class RegisterComponent implements OnInit {
       );
     }
   }
+
   ngOnInit() {
   }
-
 }
