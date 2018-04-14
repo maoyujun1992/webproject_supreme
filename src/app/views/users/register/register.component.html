@@ -1,0 +1,57 @@
+<head>
+  <title>register</title>
+</head>
+<body class="body-black">
+<nav class="navbar navbar-default header-margin-bottom">
+  <div class="supreme-font">
+    <a class="white_text" href="#"><i class="fa fa-chevron-left"></i></a>
+    <span class="supreme-text-logo"><a class="a-no-color a-no-hover a-no-visited"
+                                       routerLink="home">S U P R E M E</a></span>
+  </div>
+</nav>
+<div class="supreme-font footer-padding">
+  <p class="center_text white_text">Register</p>
+  <form (ngSubmit)="register()" #f="ngForm">
+    <label class="center_input white_text">Username</label>
+    <input placeholder="Username"
+           name="username"
+           type="text"
+           class="form-control center_input"
+           ngModel
+           required
+           #username="ngModel"/>
+
+    <label class="center_input white_text">Password</label>
+    <input placeholder="Password"
+           name="password"
+           type="text"
+           class="form-control center_input"
+           ngModel
+           required
+           #username="ngModel"/>
+    <label class="center_input white_text">Verify Password</label>
+    <input placeholder="Verify your password"
+           name="verifiedPassword"
+           type="text"
+           class="form-control center_input"
+           ngModel
+           required
+           #username="ngModel"/>
+    <div class="center_text">
+      <label for="sellercheck" class="white_text" style="word-wrap:break-word">
+        <input id="sellercheck" type="checkbox" value="Seller"/> Seller
+      </label>
+      <label for="buyercheck" class="white_text" style="word-wrap:break-word">
+        <input id="buyercheck" type="checkbox" value="Buyer"/> Buyer
+      </label>
+    </div>
+  </form>
+  <a class="btn btn-outline-danger btn-block center_input">Add a credit card</a>
+  <a class="btn btn-outline-danger btn-block center_input" (click)="f.ngSubmit.emit()">Register </a>
+  <a class="btn btn-outline-danger btn-block center_input">Cancel</a>
+</div>
+<div class="card-footer footer-color fixed-bottom">
+  <a class="pull-right white_text" href=" "><i class="fa fa-user"></i></a>
+</div>
+</body>
+
