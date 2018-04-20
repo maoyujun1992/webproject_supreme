@@ -62,7 +62,7 @@ export class UserService {
       userType: userType
     };
 
-    return this.http.post(this.baseUrl + '/api/createuser', body, this.options)
+    return this.http.post(this.baseUrl + '/api/createuser', body)
       .map(
         (res: Response) => {
           const data = res.json();
@@ -79,7 +79,7 @@ export class UserService {
         userType: userType
       };
 
-    return this.http.post(this.baseUrl + '/api/register', body)
+    return this.http.post(this.baseUrl + '/api/register', body, this.options)
       .map(
         (res: Response) => {
           const data = res.json();
