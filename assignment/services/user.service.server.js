@@ -1,16 +1,19 @@
 module.exports = function (app) {
   var facebookConfig = {
-    clientID: '1329664757133224',
-    clientSecret: 'b1f9918a53961d23ba3f308885d76a99',
-    callbackURL: 'https://cs5610-webdev-yujunm.herokuapp.com/auth/facebook/callback'
+    clientID     : '188336038634544',
+    clientSecret : 'd869fafb588201598a0fcc4daf1eefcc',
+    callbackURL  : 'https://webproject-supreme.herokuapp.com/auth/facebook/callback'
   };
 
   app.put("/api/user/:userId", updateUser);
   app.get("/api/user/:userId", findUserById);
-  app.get("/api/user/:username", findUserByUsername);
-  app.get("/api/user", findUserByCredentials);
+  app.get("/api/username/:username", findUserByUsername);
+  //app.get("/api/user", findUserByCredentials);
   app.post("/api/user", createUser);
   app.delete("/api/user/:userId", deleteUser);
+  app.get("/api/users", findAllUser);
+  app.get("/api/usernames/:username", findUserByUsernames);
+
 
   var bcrypt = require("bcrypt-nodejs");
   var userModel = require("../model/users/users.model.server");
@@ -26,10 +29,11 @@ module.exports = function (app) {
 
   app.get('/auth/facebook/callback',
     passport.authenticate('facebook', {
-      successRedirect: '/profile',
+      successRedirect: '/user/chooser',
       failureRedirect: '/login'
     }));
-  app.get('/facebook/login', passport.authenticate('facebook', {scope: ['email']}));
+
+  app.get('/api/facebook', passport.authenticate('facebook', {scope: ['email']}));
 
   passport.serializeUser(serializeUser);
   passport.deserializeUser(deserializeUser);
@@ -46,7 +50,7 @@ module.exports = function (app) {
           } else {
             var names = profile.displayName.split(" ");
             var newFacebookUser = {
-              username: 'Rename your username',
+              username: "test",
               lastName: names[1],
               firstName: names[0],
               email: profile.emails ? profile.emails[0].value : "",
@@ -86,6 +90,7 @@ module.exports = function (app) {
     userModel
       .findUserByUsername(user.username)
       .then(function (data) {
+        console.log(data);
         if (data) {
           res.status(400).send('Username is in use!');
           return;
@@ -179,7 +184,7 @@ module.exports = function (app) {
   }
 
   function findUserById(req, res) {
-    var userId = req.params["userId"]
+    var userId = req.params["userId"];
     userModel.findUserById(userId).then(function (user) {
       res.json(user);
     })
@@ -206,4 +211,16 @@ module.exports = function (app) {
       res.send(user);
     });
   }
-}
+
+  function findAllUser(req, res) {
+    userModel.findAllUser().then(function (users) {
+      res.send(users);
+    });
+  }
+  function findUserByUsernames(req, res){
+    var username = req.params.username;
+    userModel.findUserByUsernames(username).then(function (users) {
+      res.send(users);
+    });
+  }
+};

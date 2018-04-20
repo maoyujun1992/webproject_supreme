@@ -6,8 +6,7 @@
     category: {type: String, enum: ['Jacket', 'Shirt', 'Top', 'Sweatshirt', 'Pants', 'Hat', 'Bag', 'Skate', 'Accessory']},
     size: {type: String, enum: ['noSize', 'Small', 'Medium', 'Large', 'XLarge']},
     url: String,
-    price: String,
-    isRecommended: Boolean,
+    price: Number,
     _buyer: {
       type: mongoose.Schema.ObjectId,
       ref: "User"

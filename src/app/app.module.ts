@@ -28,6 +28,11 @@ import {SharedService} from './services/shared.service';
 import {APP_BASE_HREF} from '@angular/common';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
+import {ItemService} from './services/item.service.client';
+import {SellerListingComponent} from './views/users/profile/seller-profile/seller-listing/seller-listing.component';
+import {FlickrImageComponent} from './views/item/item-edit/flickr-image/flickr-image.component';
+import {FlickrService} from './services/flickr.service.client';
+import {AuthGuard} from './services/auth-guard.service';
 
 @NgModule({
   declarations: [
@@ -50,7 +55,9 @@ import {HttpModule} from '@angular/http';
     SaleHistoryComponent,
     AdminProfileComponent,
     LoggedinHomeComponent,
-    CreditcardComponent
+    CreditcardComponent,
+    SellerListingComponent,
+    FlickrImageComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +65,7 @@ import {HttpModule} from '@angular/http';
     HttpModule,
     routing
   ],
-  providers: [SharedService, UserService, {provide: APP_BASE_HREF, useValue: '/'}],
+  providers: [SharedService, UserService, ItemService, FlickrService, AuthGuard, {provide: APP_BASE_HREF, useValue: '/'}],
   bootstrap: [AppComponent]
 })
 export class AppModule {

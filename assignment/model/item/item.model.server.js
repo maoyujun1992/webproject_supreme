@@ -9,13 +9,29 @@ Item.updateItem = updateItem;
 Item.findItemByCategory = findItemByCategory;
 Item.findItemByName = findItemByName;
 Item.findAll = findAll;
+Item.findItemBySellerId = findItemBySellerId;
+Item.findItemByBuyerId = findItemByBuyerId;
+Item.findSellerListing = findSellerListing;
+
+
+function findSellerListing(userId) {
+  return Item.find({_seller: userId, _buyer: undefined});
+}
 
 function findAll() {
   return Item.find();
 }
 
+function findItemBySellerId(userId) {
+  return Item.find({_seller: userId, _buyer: {$exists: true}});
+}
+
+function findItemByBuyerId(userId) {
+  return Item.find({_buyer: userId});
+}
+
 function findItemByName(name) {
-  return Item.find({name: new RegExp('^'+name+'$',"i")});
+  return Item.find({'name': {'$regex': name}});
 }
 
 function findItemById(itemId) {
@@ -27,7 +43,6 @@ function findItemByCategory(category) {
 }
 
 function updateItem(itemId, item) {
-  delete item._id;
   return Item
     .update({_id: itemId}, {
         $set: {
@@ -37,7 +52,8 @@ function updateItem(itemId, item) {
           url: item.url,
           category: item.category,
           size: item.size,
-          isRecommended: item.isRecommended
+          _seller: item._seller,
+          _buyer: item._buyer
         }
       }
     );

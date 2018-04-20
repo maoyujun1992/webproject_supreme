@@ -29,14 +29,6 @@
     background-color: black;
 }
 
-.bg-img {
-    background: url('../../../WebstormProjects/statichtml/asset/wallpaper.png');
-    padding-bottom: 50px;
-    padding-top: 50px;
-    width: 100%;
-    height: 100%;
-}
-
 .center-search {
     display: block;
     margint-top: 100px;
@@ -86,7 +78,7 @@
 }
 
 .footer-padding {
-    margin-bottom: 200px;
+    margin-bottom: 100%;
 }
 
 .small-button {
@@ -234,4 +226,13 @@ html, body{
 }
 .text-black{
     color: black;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.center-block {
+  margin: auto;
+  display: block;
 }

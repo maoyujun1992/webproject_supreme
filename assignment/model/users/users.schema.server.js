@@ -8,7 +8,7 @@ var UserSchema = mongoose.Schema({
   email: String,
   phone: String,
   cardNumber: String,
-  cardCvv: String,
+  cvv: String,
   expirationDate: String,
   address: String,
   unit: String,
