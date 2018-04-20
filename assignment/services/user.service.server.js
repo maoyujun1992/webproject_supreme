@@ -13,6 +13,7 @@ module.exports = function (app) {
   app.delete("/api/user/:userId", deleteUser);
   app.get("/api/users", findAllUser);
   app.get("/api/usernames/:username", findUserByUsernames);
+  app.post("/api/createuser", createUser())
 
 
   var bcrypt = require("bcrypt-nodejs");

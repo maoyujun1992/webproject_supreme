@@ -2,7 +2,6 @@ import {Component, OnInit, ViewChild} from '@angular/core';
 import {UserService} from '../../../../services/user.service.client';
 import {ActivatedRoute, Router} from '@angular/router';
 import {NgForm} from '@angular/forms';
-import {SharedService} from '../../../../services/shared.service';
 
 @Component({
   selector: 'app-admin-update-user',
@@ -22,7 +21,6 @@ export class AdminUpdateUserComponent implements OnInit {
   phone: String;
 
   constructor(private userService: UserService,
-              private sharedService: SharedService,
               private activatedRoute: ActivatedRoute,
               private router: Router) {
   }
