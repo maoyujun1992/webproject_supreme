@@ -26,12 +26,11 @@ export class ItemListComponent implements OnInit {
     this.user = this.sharedService.user;
     this.items = this.sharedService.items;
     for (let i = 0; i < this.items.length; i++) {
-       console.dir(this.items[i]['_buyer']);
-       if (!!this.items[i]['_buyer']) {
-         this.items.splice(i, 1);
-         i--;
-       }
-     }
+      if (!!this.items[i]['_buyer']) {
+        this.items.splice(i, 1);
+        i--;
+      }
+    }
   }
 
   display(itemId) {

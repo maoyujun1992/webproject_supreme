@@ -70,7 +70,6 @@ export class PaymentComponent implements OnInit {
     this.cardNumber = this.loginForm.value.cardNumber;
     this.expirationDate = this.loginForm.value.expirationDate;
     this.cvv = this.loginForm.value.cvv;
-    console.log(this.sharedService.user['cvv']);
     if (!this.firstName || !this.lastName || !this.email || !this.phone || !this.state || !this.city
       || !this.cardNumber || !this.cvv || !this.expirationDate || !this.address) {
       this.errorFlag = true;

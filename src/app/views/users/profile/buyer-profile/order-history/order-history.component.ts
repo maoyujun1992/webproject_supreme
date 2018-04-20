@@ -24,23 +24,18 @@ export class OrderHistoryComponent implements OnInit {
   ngOnInit() {
     this.userId = this.sharedService.user['_id'];
     this.userService.findUserById(this.userId).subscribe((returnUser: any) => {
-      console.log(this.userId);
       this.user = returnUser;
     });
-    console.log(this.userId);
     this.itemService.findItemByBuyerId(this.userId)
       .subscribe(
         (data: any) => {
-          console.log(data);
           this.items = data;
-          console.log(this.items);
         },
         (error: any) => console.log(error)
       );
   }
 
   goCart() {
-    console.log(this.user.userType);
     if (this.user.userType === 'Buyer') {
       this.router.navigate(['user/buyer/cart']);
     }

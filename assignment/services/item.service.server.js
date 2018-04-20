@@ -4,7 +4,7 @@ module.exports = function (app) {
   var multer = require('multer');
   var upload = multer({dest: __dirname + '/../../src/assets/uploads'});
 
-  //var baseUrl = "http://localhost:3100"; // for local
+  // var baseUrl = "http://localhost:3100"; // for local
   var baseUrl = "https://webproject-supreme.herokuapp.com"; // for development
 
 
@@ -78,7 +78,6 @@ module.exports = function (app) {
 
   function findItemByCategory(req, res) {
     var category = req.params["category"];
-    console.log(category);
     if (category) {
       itemModel.findItemByCategory(category).then(function (item) {
         res.json(item);
@@ -134,9 +133,7 @@ module.exports = function (app) {
         category: category,
         size: itemSize
       };
-      console.log(newItem);
       itemModel.createItem(newItem).then(function (returnItem) {
-        console.log(returnItem._id);
         res.redirect(baseUrl + "/user/seller/item/" + returnItem._id);
       });
     } else {

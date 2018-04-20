@@ -57,9 +57,9 @@ export class ItemDisplayComponent implements OnInit {
 
   goHome() {
     if (this.user.userType === 'Buyer' || this.user.userType === 'Admin' || this.user.userType === 'Seller') {
-      this.router.navigate(['user/searchresult']);
-    } else{
-      this.router.navigate(['user/guest/searchresult']);
+      this.router.navigate(['loggedinhome/user']);
+    } else {
+      this.router.navigate(['home']);
     }
   }
 
@@ -111,7 +111,6 @@ export class ItemDisplayComponent implements OnInit {
     });
   }
   goCart() {
-    console.log(this.user.userType);
     if (this.user.userType === 'Buyer') {
       this.router.navigate(['user/buyer/cart']);
     }

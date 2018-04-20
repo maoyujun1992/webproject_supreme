@@ -10,7 +10,7 @@ import {ItemService} from '../../../services/item.service.client';
   styleUrls: ['../../../style.css']
 })
 export class AdminItemEditComponent implements OnInit {
-  itemList: [{}];
+  itemList: any[];
   category: String;
   itemId: String;
   @ViewChild('f') loginForm: NgForm;
@@ -20,7 +20,7 @@ export class AdminItemEditComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.itemList = [{}];
+    this.itemList = [];
   }
 
   findCategory() {
@@ -35,10 +35,17 @@ export class AdminItemEditComponent implements OnInit {
       this.itemList = returnList;
       this.router.navigate(['.'], {relativeTo: this.activatedRoute});
     });
+    this.category = undefined;
   }
 
   deleteItem(itemId) {
     this.itemService.deleteItem(itemId).subscribe((data: any) => {
     });
+    if (this.category === undefined) {
+      this.findAllItem();
+    } else {
+      this.findCategory();
+    }
+    this.router.navigate(['.'], {relativeTo: this.activatedRoute});
   }
 }

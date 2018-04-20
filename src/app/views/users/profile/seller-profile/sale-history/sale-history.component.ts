@@ -23,16 +23,12 @@ export class SaleHistoryComponent implements OnInit {
   ngOnInit() {
     this.userId = this.sharedService.user['_id'];
     this.userService.findUserById(this.userId).subscribe((returnUser: any) => {
-      console.log(this.userId);
       this.user = returnUser;
     });
-    console.log(this.userId);
     this.itemService.findItemBySellerId(this.userId)
       .subscribe(
         (data: any) => {
-          console.log(data);
           this.items = data;
-          console.log(this.items);
         },
         (error: any) => console.log(error)
       );

@@ -33,6 +33,8 @@ import {SellerListingComponent} from './views/users/profile/seller-profile/selle
 import {FlickrImageComponent} from './views/item/item-edit/flickr-image/flickr-image.component';
 import {FlickrService} from './services/flickr.service.client';
 import {AuthGuard} from './services/auth-guard.service';
+import { AdminNewUserComponent } from './views/admin/admin-user-edit/admin-new-user/admin-new-user.component';
+import { AdminUpdateUserComponent } from './views/admin/admin-user-edit/admin-update-user/admin-update-user.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +59,9 @@ import {AuthGuard} from './services/auth-guard.service';
     LoggedinHomeComponent,
     CreditcardComponent,
     SellerListingComponent,
-    FlickrImageComponent
+    FlickrImageComponent,
+    AdminNewUserComponent,
+    AdminUpdateUserComponent
   ],
   imports: [
     BrowserModule,

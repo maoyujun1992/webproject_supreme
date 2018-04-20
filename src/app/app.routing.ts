@@ -21,6 +21,8 @@ import {LoggedinHomeComponent} from './views/home/loggedin-home/loggedin-home.co
 import {CreditcardComponent} from './views/users/creditcard/creditcard.component';
 import {SellerListingComponent} from './views/users/profile/seller-profile/seller-listing/seller-listing.component';
 import {FlickrImageComponent} from './views/item/item-edit/flickr-image/flickr-image.component';
+import {AdminNewUserComponent} from './views/admin/admin-user-edit/admin-new-user/admin-new-user.component';
+import {AdminUpdateUserComponent} from './views/admin/admin-user-edit/admin-update-user/admin-update-user.component';
 import {AuthGuard} from './services/auth-guard.service';
 
 const appRoutes: Routes = [
@@ -34,6 +36,8 @@ const appRoutes: Routes = [
   {path: 'user/seller', component: SellerProfileComponent, canActivate: [AuthGuard]},
   {path: 'user/admin/edititem', component: AdminItemEditComponent, canActivate: [AuthGuard]},
   {path: 'user/admin/edituser', component: AdminUserEditComponent, canActivate: [AuthGuard]},
+  {path: 'user/admin/edituser/new', component: AdminNewUserComponent, canActivate: [AuthGuard]},
+  {path: 'user/admin/edituser/:uid', component: AdminUpdateUserComponent, canActivate: [AuthGuard]},
   {path: 'user/seller/new', component: ItemEditComponent, canActivate: [AuthGuard]},
   {path: 'user/seller/item/:iid', component: ItemEditComponent, canActivate: [AuthGuard]},
   {path: 'user/item/:iid', component: ItemDisplayComponent, canActivate: [AuthGuard]},

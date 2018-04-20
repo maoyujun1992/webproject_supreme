@@ -42,7 +42,6 @@ export class ItemEditComponent implements OnInit {
           if (this.itemId !== undefined) {
             this.itemService.findItemById(this.itemId).subscribe((returnItem: any) => {
               this.item = returnItem;
-              console.log(this.item);
               this.name = this.item.name;
               this.color = this.item.color;
               this.price = this.item.price;

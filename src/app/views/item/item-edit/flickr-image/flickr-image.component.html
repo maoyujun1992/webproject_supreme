@@ -4,13 +4,13 @@
 <body class="body-black">
 <nav class="navbar navbar-default header-margin-bottom">
   <div class="supreme-font">
-    <a class="white_text" (click)="goLeft()"><i class="fa fa-chevron-left"></i></a >
+    <a class="white_text" (click)="goLeft()"><i class="fa fa-chevron-left"></i></a>
     <span class="supreme-text-logo"><a class="a-no-color a-no-hover a-no-visited"
-                                       (click)="goHome()">S U P R E M E</a ></span>
+                                       (click)="goHome()">S U P R E M E</a></span>
   </div>
 </nav>
 
-<div class = "container-fluid">
+<div class="container-fluid">
   <div *ngIf="errorFlag" class="alert alert-danger">
     {{errorMsg}}
   </div>
@@ -19,19 +19,19 @@
            type="text"
            placeholder="Search..."
            name="searchContent"
-           [(ngModel)]="searchContent">
+           [(ngModel)]="searchText">
     <span class="input-group-btn">
         <button class="btn btn-danger" (click)="searchPhotos()" type="submit">Go</button>
       </span>
   </div>
   <br>
   <div class="row">
-    <div *ngFor = "let pic of photos['photo']"
+    <div *ngFor="let pic of photos['photo']"
          class="col-xs-4">
-      < img    (click)="selectPhoto(pic)"
-      width="100%"
-      [src] = "['https://farm' + pic.farm + '.staticflickr.com/' + pic.server + '/' + pic.id + '_' + pic.secret + '_s.jpg']"/>
-      <p></p >
+      <img (click)="selectPhoto(pic)"
+           width="100%"
+           [src]="['https://farm' + pic.farm + '.staticflickr.com/' + pic.server + '/' + pic.id + '_' + pic.secret + '_s.jpg']"/>
+      <p></p>
     </div>
   </div>
 
@@ -39,7 +39,7 @@
 
 
 <div class="card-footer footer-color fixed-bottom">
-  <a class="pull-right white_text" (click)="profile()"><i class="fa fa-user"></i></a >
+  <a class="pull-right white_text" (click)="profile()"><i class="fa fa-user"></i></a>
 </div>
 
 </body>

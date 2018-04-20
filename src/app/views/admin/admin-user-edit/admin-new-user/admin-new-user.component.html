@@ -1,23 +1,32 @@
 <head>
-  <title>login</title>
+  <title>admin-new-user</title>
 </head>
 <body class="body-black">
 
 <nav class="navbar navbar-default header-margin-bottom">
   <div class="supreme-font">
-    <a class="white_text" routerLink="../"><i class="fa fa-chevron-left"></i></a >
+    <a class="white_text" routerLink="../"><i class="fa fa-chevron-left"></i></a>
     <span class="supreme-text-logo"><a class="a-no-color a-no-hover a-no-visited"
-                                       routerLink="/home">S U P R E M E</a ></span>
+                                       routerLink="/loggedinhome/user">S U P R E M E</a></span>
   </div>
 </nav>
-
 <div *ngIf="errorFlag"
      class="alert alert-danger">
   {{errorMsg}}
 </div>
 <div class="supreme-font footer-padding">
-  <p class="center_text">Login</p >
-  <form (ngSubmit)="login()" #f="ngForm">
+  <form (ngSubmit)="register()" #f="ngForm">
+    <div class="center_text">
+      <label for="sellercheck" class="white_text" style="word-wrap:break-word">
+        <input
+          [(ngModel)]="userType"
+          name="userType"
+          id="sellercheck"
+          type="checkbox"
+          value="Seller"
+        /> Seller
+      </label>
+    </div>
     <label class="center_input white_text">Username</label>
     <input placeholder="Username"
            name="username"
@@ -25,8 +34,7 @@
            class="form-control center_input"
            ngModel
            required
-           #username="ngModel"
-           />
+           #username="ngModel"/>
     <span class="help-block center_input"
           *ngIf="!username.valid && username.touched">
       Please enter username!
@@ -43,26 +51,31 @@
           *ngIf="!password.valid && password.touched">
       Please enter password!
       </span>
+    <label class="center_input white_text">Verify Password</label>
+    <input placeholder="Verify your password"
+           name="verifiedPassword"
+           type="password"
+           class="form-control center_input"
+           ngModel
+           required
+           #verifiedPassword="ngModel"/>
+    <span class="help-block center_input"
+          *ngIf="!verifiedPassword.valid && verifiedPassword.touched">
+      Please verify password!
+      </span>
     <div>
       <button class="btn btn-outline-danger btn-block center_input" style="color: white;" type="submit"
               [disabled]="!f.valid">
-        Login
+        submit
       </button>
-
-      <button class="btn btn-outline-danger btn-block center_input" type="button" (click)="register()"
-              style="color: white">Register
-      </button>
-
-      <a href="/api/facebook" class="btn btn-outline-danger btn-block center_input" style="color: white"> <span
-        class="fa fa-facebook" style="color: white"></span>Facebook</a >
-
-      <button class="btn btn-outline-danger btn-block center_input" style="color: white;" routerLink="/home">Cancel
+      <button class="btn btn-outline-danger btn-block center_input" style="color: white;" routerLink="../">Cancel
       </button>
     </div>
   </form>
-</div>
 
+</div>
 <div class="card-footer footer-color fixed-bottom">
-  <a class="pull-right white_text"><i class="fa fa-user"></i></a >
+  <a class="pull-right white_text" routerLink="/user/admin"><i class="fa fa-user"></i></a>
 </div>
 </body>
+

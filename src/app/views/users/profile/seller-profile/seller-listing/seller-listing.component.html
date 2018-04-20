@@ -11,24 +11,24 @@
   </div>
 </nav>
 
-  <div class="card black-card footer-padding">
-    <div class="card-columns" style="padding: 10px">
-      <div *ngFor="let item of itemList">
-        <div class="card text-center">
-          <img class="card-img-top" src={{item.url}}>
-          <div class="card-body item-text">
-            Name: {{item.name}}<br>
-            Color: {{item.color}}<br>
-            Size: {{item.size}}<br>
-            Price: ${{item.price}}<br>
-            Seller ID: {{item._seller}}<br>
-            <a class="btn btn-outline-danger btn-block center_input supreme-font"
-                   (click)="goToEdit(item._id)">Edit</a>
-          </div>
+<div class="card black-card footer-padding">
+  <div class="card-columns" style="padding: 10px">
+    <div *ngFor="let item of itemList">
+      <div class="card text-center">
+        <img class="card-img-top" src={{item.url}}>
+        <div class="card-body item-text">
+          Name: {{item.name}}<br>
+          Color: {{item.color}}<br>
+          Size: {{item.size}}<br>
+          Price: ${{item.price}}<br>
+          Category: {{item.category}}<br>
+          <a class="btn btn-outline-danger btn-block center_input supreme-font"
+             (click)="goToEdit(item._id)">Edit</a>
         </div>
       </div>
     </div>
   </div>
+</div>
 
 <div class="card-footer footer-color fixed-bottom">
   <a class="pull-right white_text" routerLink="/user/seller"><i class="fa fa-user"></i></a>

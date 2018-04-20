@@ -11,9 +11,9 @@
 
   <div class="container-fluid">
     <div class="supreme-font">
-      <a class="white_text" routerLink="/user/searchresult"><i class="fa fa-chevron-left"></i></a>
+      <a class="white_text" routerLink="../"><i class="fa fa-chevron-left"></i></a>
       <span class="supreme-text-logo"><a class="a-no-color a-no-hover a-no-visited"
-                                         routerLink="/home">S U P R E M E</a></span>
+                                         (click)="goHome()">S U P R E M E</a></span>
     </div>
   </div>
 </nav>
@@ -36,7 +36,7 @@
         <p class="supreme-font white_text">Category: {{itemCategory}}</p>
         <p class="supreme-font white_text">Price: ${{itemPrice}}</p>
         <a class="btn btn-danger link-button" (click)="addToCart()" style="color: white">add to cart</a>
-        <a class="btn btn-danger link-button" (click) = "goHome()">keep shopping</a>
+        <a class="btn btn-danger link-button" (click)="goHome()">keep shopping</a>
       </div>
     </h5>
   </div>
@@ -44,7 +44,7 @@
 
 
 <div class=" card-footer footer-color fixed-bottom">
-  <a class="pull-left white_text" (click)="goCart()"><i class="fa fa-shopping-cart"></i></a >
+  <a class="pull-left white_text" (click)="goCart()"><i class="fa fa-shopping-cart"></i></a>
   <a class="pull-right white_text" (click)="goToProfile()"><i class="fa fa-user"></i></a>
 </div>
 </body>

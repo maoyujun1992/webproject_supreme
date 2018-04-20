@@ -36,7 +36,6 @@ export class FlickrImageComponent implements OnInit {
         }
       );
     this.itemService.findItemById(this.itemId).subscribe((returnItem: any) => {
-      console.log(this.itemId);
       this.item = returnItem;
     });
   }
@@ -58,8 +57,6 @@ export class FlickrImageComponent implements OnInit {
   selectPhoto(photo) {
     let url = 'https://farm' + photo.farm + '.staticflickr.com/' + photo.server;
     url += '/' + photo.id + '_' + photo.secret + '_b.jpg';
-    console.log(url);
-    console.log(this.item);
     this.item.url = url;
     if (this.itemId !== 'undefined') {
       this.itemService.updateItem(this.itemId, this.item).subscribe(

@@ -52,7 +52,6 @@ export class LoggedinHomeComponent implements OnInit {
     this.itemName = this.homeForm.value.searchContent;
     this.itemService.findItemByName(this.itemName).subscribe((returnItems: any) => {
       this.sharedService.items = returnItems;
-      console.log(this.sharedService.items);
       this.router.navigate(['user/searchresult']);
     });
   }
@@ -120,7 +119,6 @@ export class LoggedinHomeComponent implements OnInit {
     });
   }
   goCart() {
-    console.log(this.user.userType);
     if (this.user.userType === 'Buyer') {
       this.router.navigate(['user/buyer/cart']);
     }

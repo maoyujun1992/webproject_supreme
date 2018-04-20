@@ -23,7 +23,7 @@ function findAll() {
 }
 
 function findItemBySellerId(userId) {
-  return Item.find({_seller: userId, _buyer: {$exists: true}});
+  return Item.find({_seller: userId, _buyer: {$ne: null}});
 }
 
 function findItemByBuyerId(userId) {

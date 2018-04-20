@@ -90,7 +90,6 @@ module.exports = function (app) {
     userModel
       .findUserByUsername(user.username)
       .then(function (data) {
-        console.log(data);
         if (data) {
           res.status(400).send('Username is in use!');
           return;

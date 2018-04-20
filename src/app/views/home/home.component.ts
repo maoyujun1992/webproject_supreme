@@ -36,7 +36,6 @@ export class HomeComponent implements OnInit {
   searchTop() {
     return this.itemService.findItemByCategory('Top').subscribe((returnItems: any) => {
       this.sharedService.items = returnItems;
-      console.log(returnItems);
       this.router.navigate(['user/guest/searchresult']);
     });
   }
