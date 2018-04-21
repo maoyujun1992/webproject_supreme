@@ -579,7 +579,7 @@ var UserService = /** @class */ (function () {
             password: password,
             userType: userType
         };
-        return this.http.post(this.baseUrl + '/api/createuser', body, this.options)
+        return this.http.post(this.baseUrl + '/api/createuser', body)
             .map(function (res) {
             var data = res.json();
             return data;
@@ -592,7 +592,7 @@ var UserService = /** @class */ (function () {
             password: password,
             userType: userType
         };
-        return this.http.post(this.baseUrl + '/api/register', body)
+        return this.http.post(this.baseUrl + '/api/register', body, this.options)
             .map(function (res) {
             var data = res.json();
             return data;
